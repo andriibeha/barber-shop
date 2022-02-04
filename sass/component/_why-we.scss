@@ -1,0 +1,123 @@
+.why-we {
+  &__container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  &__section {
+    padding-bottom: 49px;
+  }
+
+  &__sub-title {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    font-size: 42px;
+    line-height: 49px;
+  }
+
+  &__description {
+    margin-bottom: 44px;
+
+    font-size: 18px;
+    line-height: 30px;
+
+    color: $wb-text;
+  }
+
+  @media screen and (min-width: 1280px) {
+    &__container {
+      flex-direction: row;
+    }
+  }
+}
+/*Label*/
+.why-we {
+  &__icon {
+    width: 13px;
+    height: 22px;
+  }
+
+  &__square {
+    width: 193px;
+
+    background-color: $bg-secondary;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    margin-bottom: 30px;
+  }
+
+  &__square:last-child {
+    margin-bottom: 0px;
+  }
+
+  &__num--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__label {
+    display: flex;
+  }
+
+  &__label--first {
+    margin-right: 30px;
+  }
+
+  &__label--second {
+    padding-top: 35px;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__label {
+      margin-left: 250px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    &__label {
+      margin-left: 150px;
+      margin-right: 130px;
+    }
+  }
+}
+
+.square {
+  &__title {
+    display: flex;
+
+    font-family: Open Sans;
+    font-size: 42px;
+    line-height: 57px;
+
+    padding-right: 41px;
+    padding-left: 57px;
+
+    margin-bottom: 6px;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+
+    width: 122px;
+
+    text-align: center;
+  }
+
+  &__text--long {
+    width: 140px;
+  }
+}

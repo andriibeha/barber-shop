@@ -1,0 +1,45 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+
+  letter-spacing: 0.02em;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+
+  color: $title;
+}
+
+.sub-title {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: $title;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    border: 1px solid $title;
+
+    transform: rotate(0deg);
+    width: 60px;
+
+    position: relative;
+    top: -3px;
+
+    margin-right: 20px;
+  }
+}

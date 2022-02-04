@@ -1,0 +1,120 @@
+.price {
+  background-image: url("../images/price/mobile.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    & {
+      background-image: url("../images/price/mobile_2x.jpg");
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url("../images/price/tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      & {
+        background-image: url("../images/price/tablet_2x.jpg");
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url("../images/price/deckstop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      & {
+        background-image: url("../images/price/deckstop_2x.jpg");
+      }
+    }
+  }
+
+  &__sub-title {
+    color: $db-title;
+
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      & {
+        margin-left: 40px;
+      }
+    }
+  }
+
+  &__sub-title::before {
+    border-color: $db-title;
+  }
+
+  &__title {
+    color: $white;
+
+    margin-bottom: 44px;
+
+    @media screen and (min-width: 768px) {
+      & {
+        margin-left: 40px;
+      }
+    }
+  }
+
+  &__wraper {
+    width: 418px;
+    padding: 30px;
+
+    margin-bottom: 50px;
+
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+
+    color: $db-text;
+
+    @media screen and (min-width: 768px) {
+      & {
+        margin-left: auto;
+        margin-right: auto;
+
+        width: 600px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    &__wraper {
+      display: flex;
+
+      justify-content: space-between;
+      width: 1000px;
+    }
+
+    &__title {
+      font-size: 42px;
+      line-height: 49px;
+    }
+  }
+
+  &__button--center {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.card__item {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 30px;
+
+  display: flex;
+  justify-content: space-between;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    & {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+}

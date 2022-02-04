@@ -1,0 +1,47 @@
+.button {
+  font-family: Open Sans;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  border: 1px solid $accent;
+  border-radius: 25px;
+
+  width: 160px;
+  height: 40px;
+
+  cursor: pointer;
+
+  &-primary {
+    color: $white;
+    background-color: inherit;
+  }
+
+  &-primary:hover,
+  &-primary:focus {
+    background-color: $accent;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &-secondary {
+    color: $title;
+    background-color: $white;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &-secondary:hover,
+  &-secondary:focus {
+    color: $white;
+    background-color: $accent;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

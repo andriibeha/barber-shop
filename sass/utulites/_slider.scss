@@ -1,0 +1,18 @@
+/*Всі картинки розміщаю горизонтально*/
+.slick-track {
+  display: flex;
+}
+/*Ховаю елементи які вилазять за контент*/
+.slick-list {
+  overflow: hidden;
+}
+/*Стрілки слайдера*/
+.slick-arrow {
+  display: none !important;
+}
+/**/
+@media screen and (min-width: 768px) {
+  .slider {
+    padding-left: 125px;
+  }
+}

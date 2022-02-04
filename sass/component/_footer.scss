@@ -1,0 +1,274 @@
+.footer__container {
+  padding-right: 0;
+  padding-left: 0;
+}
+/*Footer Form*/
+.footer {
+  &__title {
+    text-align: center;
+
+    color: $white;
+
+    margin-bottom: 44px;
+  }
+
+  &__form {
+    padding-top: 84px;
+    padding-bottom: 84px;
+    padding-right: 31px;
+    padding-left: 31px;
+
+    background-color: $ovarlay-footer;
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  &__form input {
+    background-color: inherit;
+
+    border: none;
+
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+
+    width: 100%;
+    padding-bottom: 8px;
+
+    margin-bottom: 44px;
+
+    cursor: pointer;
+  }
+
+  &__form input:hover,
+  &__form input:focus {
+    border-color: $white;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__button--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.form__input {
+  padding-bottom: 0 !important;
+  padding-top: 60px;
+}
+
+input {
+  color: $white;
+}
+label {
+  color: rgba(157, 164, 189, 0.4);
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $white;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/*Placeholder*/
+::-webkit-input-placeholder {
+  color: rgba(157, 164, 189, 0.4);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+:-moz-placeholder {
+  color: rgba(157, 164, 189, 0.4);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+::-moz-placeholder {
+  color: rgba(157, 164, 189, 0.4);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+:-ms-input-placeholder {
+  color: rgba(157, 164, 189, 0.4);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input:focus::-webkit-input-placeholder {
+  color: $white;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input:hover::-webkit-input-placeholder {
+  color: $white;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*CONTACTS*/
+.contacts {
+  background-image: url("../images/footer/mobile.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    & {
+      background-image: url("../images/footer/mobile_2x.jpg");
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      background-image: url("../images/footer/tablet.jpg");
+    }
+
+    @media (min-resolution: 2dppx) {
+      & {
+        background-image: url("../images/footer/tablet_2x.jpg");
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    & {
+      background-image: url("../images/footer/deckstop.jpg");
+    }
+  }
+
+  & {
+    padding-right: 31px;
+    padding-left: 31px;
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+
+  &__title {
+    color: $white;
+    text-align: center;
+
+    margin-bottom: 40px;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 20px;
+  }
+
+  &__iteml:last-child {
+    margin-bottom: 0;
+  }
+
+  &__text {
+    color: $db-text;
+  }
+
+  &__list {
+    margin-bottom: 44px;
+  }
+
+  &__text--underline {
+    text-decoration: underline;
+  }
+
+  &__sub-title {
+    color: $white;
+
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    color: $db-text;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      text-align: center;
+    }
+
+    &__time {
+      margin-left: 400px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    &__list {
+      margin-left: 150px;
+    }
+  }
+}
+
+/*SUB FOOTER*/
+.sub-footer {
+  display: flex;
+
+  padding: 31px 44px;
+
+  @media screen and (min-width: 768px) {
+    & {
+      justify-content: space-between;
+    }
+  }
+
+  &__copiryth {
+    margin-right: 21px;
+
+    color: $db-text;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 40px;
+  }
+
+  &__item:last-child {
+    margin-right: 0px;
+  }
+
+  &__link {
+    color: $title;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/*куывы*/
